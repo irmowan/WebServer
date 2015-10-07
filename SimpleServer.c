@@ -1,6 +1,6 @@
 //
 // Created by irmo on 15/10/7.
-// Reference to http://www.linuxhowtos.org/data/6/server.c
+//
 
 /* A simple server in the internet domain using TCP
    The port number is passed as an argument */

@@ -1,6 +1,6 @@
 //
 // Created by irmo on 15/10/7.
-// Reference to http://www.linuxhowtos.org/data/6/client.c
+//
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,7 +13,7 @@
 
 void error(const char *msg) {
     perror(msg);
-    exit(0);
+    exit(1);
 }
 
 int main(int argc, char *argv[]) {
