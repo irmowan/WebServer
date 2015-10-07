@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
     srand((unsigned int) (((finish - start)% 1001)));
     int index = rand() % MESSAGE_SIZE;
     strcpy(buffer, messages[index]);
-    printf("The message is \"%s\".\n", buffer);
+    printf("The message is \"%s\"\n", buffer);
     n = write(sockfd, buffer, strlen(buffer));
     if (n < 0)
         error("ERROR writing to socket");

@@ -75,7 +75,7 @@ void dostuff(int sock, int count) {
     bzero(buffer, 256);
     n = read(sock, buffer, 255);
     if (n < 0) error("ERROR reading from socket");
-    len = strlen(buffer) - 1;
+    len = strlen(buffer);
     sprintf(reply + strlen(reply), " %d" , len);
     printf("No.%d: Here is the message: %s\n", count, buffer);
     n = write(sock, reply, 255);

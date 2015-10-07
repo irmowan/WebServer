@@ -52,6 +52,8 @@ int main(int argc, char *argv[]) {
     // 5 is the maximum size permitted by most systems.
     listen(sockfd, 5);
     clilen = sizeof(cli_addr);
+    printf("Welcome to the simple server! The port is %d.\n", portno);
+    printf("The server is running...\n");
     // accept() causes the process to block until a client connects to the server.
     newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
     if (newsockfd < 0)
