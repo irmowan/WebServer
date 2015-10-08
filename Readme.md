@@ -17,10 +17,10 @@ SimpleServer will read a message from the client and show it, reply a constant s
 
 ### Make file
 ```
-gcc -o SimpleServer SimpleServer.c
-gcc -o SimpleClient SimpleClient.c
-gcc -o Server Server.c
-gcc -o Client Client.c
+>>> gcc -o SimpleServer SimpleServer.c
+>>> gcc -o SimpleClient SimpleClient.c
+>>> gcc -o Server Server.c
+>>> gcc -o Client Client.c
 ```
 ### Usage
 ```
